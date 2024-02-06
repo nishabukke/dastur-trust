@@ -1,13 +1,13 @@
 function openNav(){
     // var element = document.getElementsByClassName("menu_mobile");
-    document.getElementById("menu_mobile").style.marginRight = '0px';
+    document.getElementById("menu_mobile").style.marginLeft = '0px';
     document.getElementById('menu_mobile_overlay').style.display = 'block';
     document.getElementById('icon-cancel').style.display = 'block';
 }
 
 function closeNav(){
     // var element = document.getElementsByClassName("menu_mobile");
-    document.getElementById("menu_mobile").style.marginRight = '-300px';
+    document.getElementById("menu_mobile").style.marginLeft = '-300px';
     document.getElementById('menu_mobile_overlay').style.display = 'none';
     document.getElementById('icon-cancel').style.display = 'none';
 }
