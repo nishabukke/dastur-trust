@@ -380,6 +380,69 @@ a{
 
 /* media query */
 
+@media screen and (max-width: 768px) {
+    .top_header{
+        height: 500px;
+    }
+
+    .schools-section {
+        padding: 50px;
+    }
+
+    .school-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .heading-common{
+        font-size: 24px;
+    }
+    
+    .menu_side_inner{
+        background: none;
+    }
+
+    .menu_side_wrap .menu_mobile_button {
+        top: 20px;
+    }
+
+    .menu_side_wrap {
+        position: absolute;
+    }
+
+    .menu_side_wrap .menu_mobile_button {
+        padding: 15px 0px;
+    }
+    
+    .logo img{
+        width: 60px;
+    }
+    
+    .copyright_text{
+        font-size: 12px;
+    }
+
+    .schools-section .school-sm-title {
+        margin-top: 0px;
+        padding-bottom: 17px;
+        font-size: 12px;
+    }
+
+    .schools-section .row.p-5{
+        padding: 0px !important;
+    }
+
+    .card {
+        cursor: pointer;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .card-title{
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .top_header{
         height: 500px;
