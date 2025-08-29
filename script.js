@@ -1,91 +1,124 @@
-function openNav(){
-    // var element = document.getElementsByClassName("menu_mobile");
-    document.getElementById("menu_mobile").style.marginLeft = '0px';
-    document.getElementById('menu_mobile_overlay').style.display = 'block';
-    document.getElementById('icon-cancel').style.display = 'block';
-}
-
-function closeNav(){
-    // var element = document.getElementsByClassName("menu_mobile");
-    document.getElementById("menu_mobile").style.marginLeft = '-300px';
-    document.getElementById('menu_mobile_overlay').style.display = 'none';
-    document.getElementById('icon-cancel').style.display = 'none';
-}
-
-// $(".has_menu .fas.fa-angle-down").click(function () { 
-//     $(".has_menu .fas.fa-angle-down").toggleClass("fa-solid fa-angle-up"); 
-// }); 
-
-// function toggleMenu(){
-//     var menu =  document.getElementById('sub_menu');
-
-//     if(menu.style.display == 'none'){
-//         menu.style.display = 'block';
-//     }
-//     else{
-//         menu.style.display = 'none';
-//     }
-// }
 
 
-document.querySelectorAll('.accordion-title').forEach((accordionToggle) => {
 
-  accordionToggle.addEventListener('click', () => { 
-    
-    const accordionItem = accordionToggle.parentNode;
-    const accordionContent = accordionToggle.nextElementSibling;
-  
-  // If this accordion item is already open, close it.
-  
-  if (accordionContent.style.maxHeight) {
-  accordionContent.style.maxHeight = null;
-  accordionItem.classList.remove('active');
-    } else {
-    accordionContent.style.maxHeight = 'max-content';
-    // accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-    accordionItem.classList.add('active');
-    }
-    });
-    });
+let tl = gsap.timeline();
+
+tl.from(".banner-heading h1", {
+    y: 60,
+    opacity: 0,
+    duration: 1.5,
+    ease: "powe2.out"
+},"-=0.4");
+
+tl.from(".banner-heading p", {
+    y: 60,
+    opacity: 0,
+    duration: 1.5,
+    ease: "powe2.out"
+},"-=0.4");
+
+gsap.registerPlugin(ScrollTrigger);
 
 
-// Open the Modal
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "flex";
-    var mainContainer = document.getElementById('top_header');
-      mainContainer.style.display = 'none';
-  }
-  
-  // Close the Modal
-  function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-    var mainContainer = document.getElementById('top_header');
-    mainContainer.style.display = 'block';
-  }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  // Next/previous controls
-  function plusSlides(n, slideId) {
-    showSlides(slideIndex += n, slideId);
-  }
-  
-  // Thumbnail image controls
-  function currentSlider(n,slideId) {
-    showSlides(slideIndex = n, slideId);
-  }
-  
-  function showSlides(n, slideId) {
-    var i;
-    var slides = document.getElementsByClassName(slideId);
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-  }
-  
-  
-  
+// Animate the text spans inside #page2
+const texts = document.querySelectorAll(".school-section h2 span");
+
+texts.forEach((text) => {
+  gsap.set(text, { y: "100%", opacity: 0 }); // Set initial state for each span
+});
+
+// Animate the text spans when #page2 appears
+gsap.to(texts, {
+  y: 0,
+  opacity: 1,
+  stagger: 0.2,
+  duration: 1,
+  ease: "power4.out",
+  scrollTrigger: {
+    trigger: ".school-section",
+    start: "top 100%",
+    toggleActions: "play none none none"
+  },
+});
+
+gsap.to(".ek", {
+  duration: 3,
+  scrollTrigger: {
+    trigger: ".ek",
+    start: "top top",
+    end: "+=100%",
+    scrub: true,
+    pin: true,
+    pinSpacing: false
+  },
+});
+
+gsap.to(".do", {
+  duration: 3,
+  scrollTrigger: {
+    trigger: ".do",
+    start: "top top",
+    end: "+=100%",
+    scrub: true,
+    pin: true,
+    pinSpacing: false
+  },
+});
+
+gsap.to(".tin", {
+  duration: 3,
+  scrollTrigger: {
+    trigger: ".tin",
+    start: "top top",
+    end: "+=100%",
+    scrub: true,
+    pin: true,
+    pinSpacing: false
+  },
+});
+
+gsap.to(".char", {
+  duration: 3,
+  scrollTrigger: {
+    trigger: ".char",
+    start: "top top",
+    end: "+=100%",
+    scrub: true,
+    pin: true,
+    pinSpacing: false
+  },
+});
+
+gsap.to(".paanch", {
+  duration: 3,
+  scrollTrigger: {
+    trigger: ".paanch",
+    start: "top top",
+    end: "+=60%",
+    scrub: true,
+    pin: true,
+    pinSpacing: false
+  },
+});
+
+
+        function page4Animation() {
+            var elemC = document.querySelector("#elem-container")
+            var fixed = document.querySelector("#fixed-image")
+            elemC.addEventListener("mouseenter", function () {
+                fixed.style.display = "block"
+            })
+            elemC.addEventListener("mouseleave", function () {
+                fixed.style.display = "none"
+            })
+
+            var elems = document.querySelectorAll(".elem")
+            elems.forEach(function (e) {
+                e.addEventListener("mouseenter", function () {
+                    var image = e.getAttribute("data-image");
+                    fixed.style.backgroundImage = `url(${image})`;
+                })
+            })
+        }
+
+        page4Animation();

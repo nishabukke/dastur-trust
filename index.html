@@ -6,161 +6,419 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Sardar Dastur Trust</title>
+    <title>Dastur Trust</title>
 </head>
 <body>
-
-    <header class="top_header"></header>
-
-    <div class="logo">
-        <img src="images/logo.png" alt="">
-    </div>
+    <header id="header">
+        <div class="header-overlay"></div>
+        <div class="header-inner">
+            <div class="container">
+                <div class="logo">
+                <img src="images/small-logo.png" alt="">
+                </div>
+            <div class="navigation">
+              <ul class="nav navbar-nav">
+                  <li class="nav-li"><a href="index.html" class="active">Home</a></li>
+                  <li class="nav-li"><a href="#">About Us  </a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="principal-desk.html">Principal's Desk</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-li"><a href="#">Rules  </a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Timings & Prayer</a></li>
+                            <li><a href="#">Rules for School</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-li"><a href="#">Infrastructure & Facilities  </a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Infrastructure</a></li>
+                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">Labs</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-li"><a href="#">Academics  </a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Curriculum & Affiliation</a></li>
+                            <li><a href="#">Examination & Promotion</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">Co-curricular</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-li"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+            <div class="container banner-heading">
+                <h1>Sardar Dastur Trust</h1>
+                <p class="m-0">Complete Academic Journey</p>
+            </div>
+    </header>
 
     <main class="site-content">
-        <section class="schools-section">
-            <h2 class="text-center heading-common">OUR SCHOOLS</h2>
-            <h5 class="text-center school-sm-title">TO CREATE HIGHLY INFORMED AIMED SOCIETY</h5>
-
-            <div class="school-cards">
-                        <div class="card">
-                            <img class="card-img-top" src="images/dastur-primary.jpg" alt="Card image">
-                            <div class="card-body text-center">
-                              <h4 class="card-title">Bai Najamai Nosherwan Sardar Dastur Primary & Nursery School
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="images/boys-school.jpg" alt="Card image">
-                            <div class="card-body">
-                              <h4 class="card-title">The Sardar Dastur Hoshang Boys' High School</h4>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="images/girls-school.jpg" alt="Card image">
-                            <div class="card-body">
-                              <h4 class="card-title">The Sardar Dastur Nosherwan Girls' High School</h4>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="images/coed-school.jpg" alt="Card image">
-                            <div class="card-body">
-                              <h4 class="card-title">Sardar Dastur Hormazdiar High School</h4>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="images/jr-college.jpg" alt="Card image">
-                            <div class="card-body">
-                              <h4 class="card-title">The Sardar Dastur Hormazdiar Junior College</h4>
-                            </div>
-                        </div>
+        <section class="about-section section-lg container">
+            <div class="left-about">
+                <div class="common-heading">
+                    <h2>Pioneers in Education <br><span> Since 1893</span></h2>
+                </div>
+                <p>To perpetuate the memory of their high priest Sardar Dastur Nosherwan Jamasp, the Parsi Community raised subscriptions to establish Sardar Dastur Nosherwan Girls High School in 1893 at House # 317, Main street, Pune. Later on being presented Bungalow No 3, Arsenal Road (now Moledina Road) by the brothers of the high priest, the school shifted to its present location in 1911, to accommodate a larger number of children, the school underwent expansion when a new building was evicted by the three surviving brothers in the memory of their sister Bai Behmanbai Pestonji Kanga.</p>
+                <p>Subsequently, to commemorated the Shams-ul-Ulema Sardar Khan Bahadur Dr. Hoshang Jamasp Dastur, MA Phd, CIE Sardar Dastur Hoshang Boys High School was inaugurated on 8 Jan 1912.</p>
+                <a href="#" class="common-btn">Know More</a>
+            </div>
+            <div class="right-about">
+                <img src="images/about-img.png" alt="">
             </div>
         </section>
+
+        <section class="school-section section-lg">
+            <div class="container-fluid">
+                <div>
+                <h2>
+                    <span>Our</span>
+                    <span>Schools</span>
+                </h2>
+            </div>
+            <div class="schools">
+                <div class="one borders ek">
+                    <div class="oneL">
+                        <img src="images/dastur-primary.jpg" alt="">
+                    </div>
+                    <div class="oneR">
+                        <a href="#"><h3>Dastur Primary</h3></a>
+                        <p>Bai Najamai Nosherwan Dastur Primary School is a recognized co-educational Primary School founded on 21st September 1953 and is a charitable minority institution under the CHARITABLE MINORITY TRUST. It admits pupils without any distinction of caste and creed, in classes from Pre-Nursery to Std. IV.</p>
+                    </div>
+                </div>
+                <div class="one borders do">
+                    <div class="oneL">
+                        <img src="images/girls-school.jpg" alt="">
+                    </div>
+                    <div class="oneR">
+                        <h3>Dastur Girls</h3>
+                        <p>The Sardar Dastur Nosherwan Girls' High School was founded on 1st February 1893. It is a Charitable Minority Institution under a Charitable Minority Trust. It is a recognised Secondary School and admits girls without distinction of caste and creed. The students are prepared for the Secondary School Certificate Examination.</p>
+                    </div>
+                </div>
+                 <div class="one borders tin">
+                    <div class="oneL">
+                        <img src="images/boys-school.jpg" alt="">
+                    </div>
+                    <div class="oneR">
+                        <h3>Dastur Boys</h3>
+                        <p>In today's ever-changing world, one of education's great challenges is to respond to the growing demands of the education environment so as to enhance the quality of teaching and learning in schools.</p>
+                    </div>
+                </div>
+                 <div class="one borders char">
+                    <div class="oneL">
+                        <img src="images/coed-school.jpg" alt="">
+                    </div>
+                    <div class="oneR">
+                        <h3>Dastur COED</h3>
+                        <p>Sardar Dastur Hormazdiar High School is a recognized co-educational Secondary School which was founded on 24th February, 1998 by the Founder President, Sardar Dastur Hormazdiar Nosherwan Kaikobad Dastur.</p>
+                    </div>
+                </div>
+                 <div class="one borders paanch">
+                    <div class="oneL">
+                        <img src="images/jr-college.jpg" alt="">
+                    </div>
+                    <div class="oneR">
+                        <h3>Dastur College</h3>
+                        <p>The Sardar Dastur Hormazdiar High School came into being. With the aim of giving children a comprehensive, sound, thorough and all- round education at the school level, The Sardar Dastur School Trust established the Sardar Dastur Hormazdiar Junior College in 2006.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            </div>
+        </section>
+
+        <section class="president-msg-section section-lg">
+            <div class="left-p-msg">
+                <div class="common-heading">
+                    <h2>President's <span>Message</span></h2>
+                </div>
+                <p class="m-0">Dastur Schools Trust believes that Education is neither merely about focusing on academics nor it is about involving children in a series of extracurricular activities. True education encompasses not only development of intellect but also development of good character, compassion, a constructive and inquisitive mind and above all a passion to learn with positive attitude.</p>
+                <p class="m-0">At Dastur Schools/College, our endeavour is to bring about all round development of children by providing avenues for their creativity to blossom so that they can discover their innate strengths, grow into their best selves and make them confident and responsible citizens of our society.</p>
+            </div>
+            <div class="right-p-msg">
+                <img src="images/president.png" alt="" class="border-gradient border-gradient-purple">
+                <h4 class="m-0 text-center">Col. S. K. Pudumjee</h4>
+            </div>
+        </section>
+
+        <section class="facilities-section section-lg">
+            <div class="container">
+                <div class="common-heading">
+                    <h2>Enabling Learning <span>Environments</span></h2>
+                </div>
+                <div class="slider-images">
+                        <div class="slider-img" data-title="Library" data-desc="A well-equipped library to nurture reading habits and research skills.">
+                            <div class="slider-img-overlay"></div>
+                        <img src="images/library.jpg" alt="1" />
+                        <h3><img src="images/book.png" alt="" class="icon"></h3>
+                        <div class="details">
+                            <h2>Library</h2>
+                        </div>
+                        </div>
+                        <div class="slider-img" data-title="Laboratory" data-desc="Modern science labs to encourage practical learning.">
+                            <div class="slider-img-overlay"></div>
+                        <img src="images/science-lab.jpg" alt="2" />
+                        <h3><img src="images/laboratory.png" alt="" class="icon"></h3>
+                        <div class="details">
+                            <h2>Laboratory</h2>
+                        </div>
+                        </div>
+                        <div class="slider-img" data-title="Basketball Court" data-desc="Spacious basketball court to boost sportsmanship.">
+                            <div class="slider-img-overlay"></div>
+                        <img src="images/ground.jpg" alt="3" />
+                        <h3><img src="images/sports.png" alt="" class="icon"></h3>
+                        <div class="details">
+                            <h2>Sports Activities</h2>
+                        </div>
+                        </div>
+                        <div class="slider-img active">
+                            <div class="slider-img-overlay"></div>
+                        <img src="images/health.jpg" alt="4" />
+                        <h3><img src="images/wellness.png" alt="" class="icon"></h3>
+                        <div class="details">
+                            <h2>Health & Wellness</h2>
+                        </div>
+                        </div>
+                        <div class="slider-img">
+                            <div class="slider-img-overlay"></div>
+                        <img src="images/hall.jpg" alt="5" />
+                        <h3><img src="images/hall.png" alt="" class="icon"></h3>
+                        <div class="details">
+                            <h2>Seminar Hall</h2>
+                        </div>
+                        </div>
+                        <div class="slider-img">
+                            <div class="slider-img-overlay"></div>
+                        <img src="images/seminar.jpg" alt="6" />
+                        <h3><img src="images/career.png" alt="" class="icon"></h3>
+                        <div class="details">
+                            <h2>Career Guidance</h2>
+                        </div>
+                        </div>
+                        <div class="slider-img">
+                            <div class="slider-img-overlay"></div>
+                        <img src="images/creative.jpg" alt="6" />
+                        <h3><img src="images/extracurricular-activities.png" alt="" class="icon"></h3>
+                        <div class="details">
+                            <h2>Beyond Academics</h2>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="principal-section section-lg container">
+            <div class="common-heading">
+                <h2>Insights from the <span>Principal</span></h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="principal-item">
+                        <div class="principal-desc">
+                            <div class="principal-name">
+                                <h4 class="m-0">Miss Farrah Y. Gustaspi</h4>
+                                <p class="m-0">Dastur COED</p>
+                            </div>
+                            <img src="images/principal-coed.jpeg" alt="">
+                        </div>
+                        <div class="principal-msg">
+                            <p class="m-0">At the Sardar Dastur Hormazdiar High School we firmly believe that children can be moulded. They are gifts from God entrusted to us and we need to guide them intellectually, socially, morally, culturally and spiritually so that they can carve a niche for themselves in the world of opportunities and leave their footprints in the sands of time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="principal-item">
+                        <div class="principal-desc">
+                            <div class="principal-name">
+                                <h4 class="m-0">Mrs. S . P. Yannuwar</h4>
+                                <p class="m-0">Dastur Girls</p>
+                            </div>
+                            <img src="images/principal-girls.jpg" alt="">
+                        </div>
+                        <div class="principal-msg">
+                            <p class="m-0">the school has created over the years in the field of education- A commitment to give back to society! Needless to say, generations have witnessed, the alumni, the dynamic leading ladies who have placed themselves in top positions and are successful in different walks of life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="principal-item">
+                        <div class="principal-desc">
+                            <div class="principal-name">
+                                <h4 class="m-0">Mrs. Leena D. Weilson</h4>
+                                <p class="m-0">Dastur Primary</p>
+                            </div>
+                            <img src="images/principal-primary.jpg" alt="">
+                        </div>
+                        <div class="principal-msg">
+                            <p class="m-0">Teaching and learning offer us numerous opportunities to focus on a number of small things that will culminate over time to produce individuals who are capable to achieve great things in life. Having started its journey way back in the year 1953 exclusively for the Zoroastrian minority community, today Bai Najamai Nosherwan Dastur School caters to all categories of students in our society</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="principal-item">
+                        <div class="principal-desc">
+                            <div class="principal-name">
+                                <h4 class="m-0">Mrs Nisha Sahay</h4>
+                                <p class="m-0">Dastur Boys</p>
+                            </div>
+                            <img src="images/principal-boys.jpeg" alt="">
+                        </div>
+                        <div class="principal-msg">
+                            <p class="m-0">We at SDHBHS firmly believe that education is the key to a nation’s progress, and with this as our goal, we take it as our bounded calling to provide the best academic and co-curricular training any student can possibly get. The school secures the students with all the necessary awareness and skills to become truly efficacious in their chosen field.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="principal-item">
+                        <div class="principal-desc">
+                            <div class="principal-name">
+                                <h4 class="m-0">Dr. S. Kamate</h4>
+                                <p class="m-0">Dastur College</p>
+                            </div>
+                            <img src="images/principal-college.jpg" alt="">
+                        </div>
+                        <div class="principal-msg">
+                            <p class="m-0"><em>“Success comes to those who work hard and stays with those, who don’t rest on the laurels of the past.”</em> We live today in a world that is so very different from the one we grew up in, the one we were educated in. The world today is changing at such an accelerated rate and we as educators need to pause and reflect on this entire system of Education.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="vision-mission section-lg pt-2">
+            <div id="page3">
+            <div id="elem-container">
+                <div id="elem1" class="elem"
+                    data-image="./images/about-img.png">
+                    <div class="overlay"></div>
+                    <h2>Our Vision</h2>
+                </div>
+                <div class="elem"
+                    data-image="./images/boys-school.jpg">
+                    <div class="overlay"></div>
+                    <h2>Our Mission</h2>
+                </div>
+                <div class="elem"
+                    data-image="./images/goals.png">
+                    <div class="overlay"></div>
+                    <h2>Our Goals</h2>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div id="fixed-image"></div>
     </main>
 
-    <div class="menu_side_wrap">
-        <div class="menu_side_inner">
-            <a class="menu_mobile_button menu_mobile_button_text" onclick="openNav()">MENU</a>
+    <footer id="footer" class="section-lg pb-0">
+        <div class="footer-inner container">
+          <div class="footer-item">
+            <img src="images/logo.png" alt="">
+            <p class="m-0">In 1929, the Trustees/Board of Management was formally established and registered as Charitable Trust to administer and manage the schools.</p>
+          </div>
+          <div class="footer-item">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">About Dastur</a></li>
+              <li><a href="#">Rules</a></li>
+              <li><a href="#">School History</a></li>
+              <li><a href="#">Admissions</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h4>Get In touch</h4>
+            <ul>
+              <li><a href="https://maps.app.goo.gl/pFgwPZnVAu4hDV8T7"><span class="fas fa-location"></span>Camp, Pune, Maharashtra 411001</a></li>
+              <li><a href="tel:02026343011"><span class="fas fa-phone"></span> 020 2634 3011</a></li>
+              <li><a href="#"><span class="fas fa-envelope"></span>someone@example.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7566.358477361131!2d73.87257367619655!3d18.520800700000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c05006317277%3A0x6083c68bbc6b57b8!2sDastur%20Hormazdiar%20Co-Ed%20School!5e0!3m2!1sen!2sin!4v1754377019656!5m2!1sen!2sin" width="250" height="250" style="border:0; margin-bottom: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
-    </div>
-    <div class="menu_mobile_overlay" id="menu_mobile_overlay"></div>
-    <div class="menu_mobile" id="menu_mobile">
-        <div class="menu_mobile_inner">
-            <a class="menu_mobile_close icon-cancel" id="icon-cancel" onclick="closeNav()"></a>
-            <div class="accordion-nav">
-                <div class="accordion-item">
-                    <div class="accordion-title gallery">
-                        <a href="index.html">home</a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title">
-                        About
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li><a href="about.html">About Our Institution</a></li>
-                            <li><a href="president-msg.html">President's Message</a></li>
-                            <li><a href="values.html">Our Values</a></li>
-                            <li><a href="vision.html">Our Vision</a></li>
-                            <li><a href="mission.html">Our Mission</a></li>
-                            <li><a href="goals.html">Our Goals</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title">
-                        General Info
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">Transport and Conveyance</a></li>
-                            <li><a href="#">Motto and Anthem</a></li>
-                            <li><a href="#">Admission and Withdrawal</a></li>
-                            <li><a href="#">Counselling and Guidance</a></li>
-                            <li><a href="#">Group Insurance</a></li>
-                            <li><a href="#">Guidlines For Parents</a></li>
-                            <li><a href="#">PTA Meetings</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title">
-                        School & College
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">Faculty and Staff</a></li>
-                            <li><a href="#">Curriculum and Affiliation</a></li>
-                            <li><a href="#">Infrastructure and Facilities</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title">
-                        Rules
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">General Behaviour</a></li>
-                            <li><a href="#">Attendance</a></li>
-                            <li><a href="#">School & College Schedule</a></li>
-                            <li><a href="#">Uniform</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title gallery">
-                        <a href="gallery.html">Gallery</a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title gallery">
-                        <a href="#">Careers</a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-title gallery">
-                        <a href="contact.html">Contact Us</a>
-                    </div>
-                </div>
-            </div>
+        <div class="lower-footer container">
+          <p>Copyright © 2016 Dastur Schools And Junior College | All rights reserved</p>
+          <p>Developed and designed by Nspiresoft</p>
         </div>
-    </div>
-
-    <footer class="footer_wrap">
-        <div class="copyright_wrap container">
-            <div class="copyright_wrap_inner">
-                <div class="copyright_text">
-                    <p><a href="index.html" target="_blank" rel="nofollow">Dastur Trust</a>
-                        © 2016 All rights reserved.</p>
-                    <p>Designed and developed by Nspiresoft</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="jQuery.js"></script>
     <script src="script.js"></script>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+        // Update active class
+        $(".slider-img").removeClass("active");
+        $(this).addClass("active");
+
+        // Get data attributes
+        var title = $(this).data("title");
+        var desc = $(this).data("desc");
+
+        // Update the description section
+        $("#desc-title").text(title);
+        $("#desc-text").text(desc);
+        });
+    });
+    </script>
 </body>
 </html>
