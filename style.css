@@ -530,9 +530,9 @@ p{
   }
 
   #fixed-image {
-      height: 30vw;
-      width: 24vw;
-      border-radius: 50px;
+    height: 350px;
+    width: 300px;
+    border-radius: 50px;
       position: fixed;
       z-index: 99;
       left: 50%;
