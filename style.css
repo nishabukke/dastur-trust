@@ -37,6 +37,8 @@ p{
 .common-heading h2{
     color: #191919;
     font-size: 42px;
+    font-weight: 600;
+    font-family: 'Playfair Display';
 }
 
 .common-heading h2 span{
@@ -129,7 +131,7 @@ p{
     }
 
     ul.nav .nav-li > a{
-        margin: 0px 20px;
+        margin: 0px 15px;
     }
     
     ul.nav a{
@@ -157,10 +159,10 @@ p{
       visibility: hidden;
       opacity: 0;
       background-color: #ffffff;
-      margin: 0;
+      margin-left: 15px;
       padding: 0;
-      left: 20px;
-      top: 170%;
+      left: 0%;
+      top: 248%;
       visibility: hidden;
       z-index: 10;
       -webkit-transition: all 0.3s linear 0s;
@@ -168,7 +170,7 @@ p{
       text-align: left;
       width: 230px;
       position: absolute;
-      box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
     }
     
     ul.nav li .dropdown li{
@@ -239,6 +241,7 @@ p{
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
+    font-family: 'Playfair Display';
     padding: 0px 30px;
 }
 
