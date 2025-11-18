@@ -58,6 +58,11 @@ p{
     background: linear-gradient(90deg,rgba(8, 82, 145, 1) 0%, rgba(122, 171, 214, 1) 100%, rgba(255, 255, 255, 1) 100%);
 }
 
+.common-btn:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* header css start */
 
 #header{

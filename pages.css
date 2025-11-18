@@ -226,6 +226,10 @@ p{
     align-items: center;
 }
 
+.about-section h2{
+    color: #191919;
+}
+
 .about-section p{
     font-size: 18px;
     color: #491b00;
@@ -435,10 +439,6 @@ p{
   
   .d-chart-show {
     display: block;
-  }
-
-  .tab-section{
-    padding: 0px 30px;
   }
 
   .tab-section p{
