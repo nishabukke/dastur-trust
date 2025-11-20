@@ -52,6 +52,57 @@
             </div>
     </header>
 
+    <div class="mobile-header">
+      <div class="mobile-menu-container">
+          <div class="logo">
+              <a href="index.html"><img src="images/dastur-logo.png" alt=""></a>
+          </div>
+          <div class="mobile-menu">
+              <a class="canva_expander nav-menu-link menu-button" href="#">
+                  <span class="dot1"></span>
+                  <span class="dot2"></span>  
+                  <span class="dot3"></span>
+                  <span class="dot4"></span>
+              </a>
+              <button class="cross">&#735;</button>
+          <div class="menu">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</i>
+                    </a>
+                  </li>
+                  <li><a href="#" class="nav__submenu">General Info <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="motto-anthem.html">Motto & Anthem</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="ss-welfare.html">Student Support & Welfare</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="admission-withdrawal.html">Admission & Withdrawal</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="guidelines-parents.html">Guidelines for Parents</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="pta-meeting.html">PTA Meetings</a>
+                        </li>
+                    </ul>
+                    </a>
+                  </li>
+              <li><a href="rules.html">Rules & Regulations</i></a></li>
+              <li><a href="school-college.html">Schools & College</i></a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="career.html">Careers</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </div> 
+          </div>
+      </div>
+    </div>
+
     <main class="site-content ss-welfare">
         <section class="career-section section-lg container">
             <div class="login-container">
@@ -228,5 +279,177 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="jQuery.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        
+// career login form functionality
+
+
+document.getElementById("careerLoginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
+
+    let emailError = document.getElementById("emailError");
+    let passwordError = document.getElementById("passwordError");
+
+    let isValid = true;
+
+    // Reset errors
+    emailError.textContent = "";
+    passwordError.textContent = "";
+
+    // Email validation
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+        emailError.textContent = "Email is required";
+        isValid = false;
+    } else if (!emailPattern.test(email)) {
+        emailError.textContent = "Enter a valid email address";
+        isValid = false;
+    }
+
+    // Password validation
+    if (password === "") {
+        passwordError.textContent = "Password is required";
+        isValid = false;
+    } else if (password.length < 6) {
+        passwordError.textContent = "Password must be at least 6 characters";
+        isValid = false;
+    }
+
+    // If everything is fine, submit form
+    if (isValid) {
+        this.submit();
+    }
+});
+
+document.querySelectorAll(".login-links a").forEach(link => {
+    link.addEventListener("click", function (e) {
+        e.stopPropagation();
+    });
+});
+
+
+
+
+
+
+// Open modal when clicking "New User? Register Here"
+document.querySelector(".new-user-link").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.getElementById("newUserModal").style.display = "flex";
+});
+
+// Close modal
+document.querySelector(".modal-close").addEventListener("click", function() {
+    document.getElementById("newUserModal").style.display = "none";
+});
+
+// Close modal on clicking outside
+window.addEventListener("click", function(e) {
+    const modal = document.getElementById("newUserModal");
+    if (e.target === modal) modal.style.display = "none";
+});
+
+
+// New User Form Validation
+document.getElementById("newUserForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    const sal = document.getElementById("salutation");
+    const fname = document.getElementById("fname");
+    const lname = document.getElementById("lname");
+    const regEmail = document.getElementById("regEmail");
+    const mobile = document.getElementById("mobile");
+    const regPassword = document.getElementById("regPassword");
+
+    // Reset errors
+    document.querySelectorAll(".error").forEach(el => el.textContent = "");
+
+    // Validation
+    if (sal.value === "") {
+        document.getElementById("salError").textContent = "Required";
+        isValid = false;
+    }
+
+    if (fname.value.trim() === "") {
+        document.getElementById("fnameError").textContent = "Required";
+        isValid = false;
+    }
+
+    if (lname.value.trim() === "") {
+        document.getElementById("lnameError").textContent = "Required";
+        isValid = false;
+    }
+
+    let mailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!mailPattern.test(regEmail.value.trim())) {
+        document.getElementById("regEmailError").textContent = "Enter valid email";
+        isValid = false;
+    }
+
+    if (!/^[0-9]{10}$/.test(mobile.value)) {
+        document.getElementById("mobileError").textContent = "Enter valid 10-digit number";
+        isValid = false;
+    }
+
+    if (regPassword.value.length < 6) {
+        document.getElementById("regPassError").textContent = "Min 6 characters required";
+        isValid = false;
+    }
+
+    if (isValid) this.submit();
+});
+
+
+
+// Open Forgot Password Modal
+document.querySelector(".forgot-link").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.getElementById("forgotPasswordModal").style.display = "flex";
+});
+
+// Close Forgot Modal
+document.querySelector(".forgot-close").addEventListener("click", function() {
+    document.getElementById("forgotPasswordModal").style.display = "none";
+});
+
+// Click outside to close
+window.addEventListener("click", function(e) {
+    const modal = document.getElementById("forgotPasswordModal");
+    if (e.target === modal) modal.style.display = "none";
+});
+
+// Forgot Password Validation
+document.getElementById("forgotPasswordForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let email = document.getElementById("forgotEmail").value.trim();
+    let error = document.getElementById("forgotEmailError");
+    let valid = true;
+
+    error.textContent = "";
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(email === ""){
+        error.textContent = "Email is required";
+        valid = false;
+    } else if(!emailPattern.test(email)){
+        error.textContent = "Enter a valid email address";
+        valid = false;
+    }
+
+    if(valid){
+        this.submit();
+    }
+});
+
+    </script>
 </body>
 </html>
